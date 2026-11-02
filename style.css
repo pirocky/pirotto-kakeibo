@@ -1,0 +1,18 @@
+/* Shared style for the public pages (公開ページの共通の見た目) */
+:root { --brand: #0E8A74; --ink: #1d1d1f; --sub: #6e6e73; --bg: #f5f5f7; --card: #fff; --line: #e3e3e8; }
+@media (prefers-color-scheme: dark) {
+  :root { --brand: #2EC4A5; --ink: #f5f5f7; --sub: #a1a1a6; --bg: #000; --card: #1c1c1e; --line: #38383a; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.8 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+header img { width: 64px; height: 64px; border-radius: 14px; }
+h1 { font-size: 28px; line-height: 1.3; margin: 0; }
+header p { margin: 0; color: var(--sub); }
+section { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px 20px; margin: 16px 0; }
+h2 { font-size: 18px; margin: 0 0 4px; }
+p { margin: 4px 0; }
+a { color: var(--brand); }
+footer { color: var(--sub); font-size: 14px; margin-top: 24px; }
